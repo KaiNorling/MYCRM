@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0);
+           
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        img{
+            object-fit: cover;
+            width: 100%;
+           
+        }
+
+        .box1{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .box1 >div{
+            border: 2px solid black;
+            background-color: white;
+        }
+        .box2 >div{
+            border: 2px solid black;
+            background-color: white;
+        }
+        .box2{
+            display: flex;
+           
+           
+            justify-content: center;
+        }
+
+        .one{
+      
+            height: 400px;
+            width: 400px;
+
+
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .four{
+            height: 300px;
+            width: 300px;
+        
+
+        }
+
+
+
+        .quarter-tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: rotation 10s infinite linear;
+   
+}
+
+.quarter-tile > div{
+   
+}
+
+.tile {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.tile.green {
+    background-color: rgb(72, 71, 71);
+    clip: rect(0px, 200px, 100px, 100px);
+    width: 200px;
+    transform: scale(1);
+    object-fit: cover;
+    padding: 2px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   transition:transform 2s ease;
+}
+.tile.green:hover{
+    transform: scale(0.5);
+
+}
+
+
+.tile.blue {
+    background-color: rgb(124, 118, 118);
+    clip: rect(0px, 100px, 100px, 0px);
+    width: 200px;
+    transform: scale(4);
+    object-fit: cover;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition:transform 2s ease;
+}
+
+.tile.blue:hover{
+    transform: scale(3);
+
+}
+
+.tile.orange {
+    background-color: rgb(143, 135, 135);
+    clip: rect(100px, 100px, 200px, 0px);
+    width: 200px;
+    transform: scale(3);
+    
+    object-fit: cover;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition:transform 2s ease;
+}
+.tile.orange:hover{
+    transform: scale(2);
+
+}
+
+.tile.yellow {
+    background-color: rgb(184, 181, 181);
+    clip: rect(100px,200px, 200px, 100px);
+    width: 200px;
+    transform: scale(2);
+    object-fit: cover;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition:transform 2s ease;
+ 
+
+}
+.tile.yellow:hover{
+    transform: scale(1);
+
+}
+
+.green{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	
+  
+}
+.blue{
+    background: linear-gradient(-200deg, #23d5ab, #23a6d5, #ee7752, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient1 15s ease infinite;
+ 
+   
+}
+
+.yellow{
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #294d83, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient2 15s ease infinite;
+   
+}
+.orange{
+    background: linear-gradient(-10deg, #23d5ab, #ee7752 , #23d5ab, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient3 15s ease infinite;
+   }
+
+
+   @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
+  
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient1 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient2 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient3 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes right {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes left {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(130deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
+	background-size: 400% 400%;
+	animation: right 15s ease infinite;
+	height: 100vh;
+    
+
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(45deg, #e73c7e, #ee7752, #23d5ab, #23d5ab);
+	background-size: 400% 400%;
+	animation: left 15s ease infinite;
+	height: 100vh;
+    
+}
+    </style>
+
+
+</head>
+<body>
+
+  <!-- <div class="box1" >
+    <div class="one">1</div>
+    <div class="two">2</div>
+  </div>
+ <div class="box2">
+    <div class="four">4</div>
+    <div class="three">3</div>
+   
+ </div> -->
+
+
+
+<div  class="right">
+<div class="left">
+    <div class="quarter-tile">
+        <div class="tile green">  </div>
+        <div class="tile blue">  </div>
+        <div class="tile yellow"></div>
+        <div class="tile orange"></div>
+    </div>
+</div>
+</div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: center;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        img{
+            object-fit: cover;
+            width: 100%;
+           
+        }
+
+        .box1{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .box1 >div{
+            border: 2px solid black;
+            background-color: white;
+        }
+        .box2 >div{
+            border: 2px solid black;
+            background-color: white;
+        }
+        .box2{
+            display: flex;
+           
+           
+            justify-content: center;
+        }
+
+        .one{
+      
+            height: 400px;
+            width: 400px;
+
+
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .four{
+            height: 300px;
+            width: 300px;
+        
+
+        }
+
+
+
+        .quarter-tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+   
+}
+
+.quarter-tile > div{
+   
+}
+
+.tile {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.tile.green {
+    background-image: url("https://static.wikia.nocookie.net/warframe/images/1/1e/Earth.png/revision/latest?cb=20161016212227"),;
+
+    clip: rect(0px, 200px, 100px, 100px);
+    width: 200px;
+    transform: scale(1);
+    object-fit: cover;
+   
+}
+
+.tile.blue {
+    background-image: url("https://static.tildacdn.com/tild6635-3933-4135-b530-363135363039/5ce5b694df01616ae151.png"),;
+  
+    clip: rect(0px, 100px, 100px, 0px);
+    width: 200px;
+    transform: scale(4);
+    object-fit: cover;
+    
+}
+
+.tile.orange {
+    background-image: url("https://e7.pngegg.com/pngimages/489/231/png-clipart-earth-planet-atmosphere-appulse-earth-photography-atmosphere.png");
+ 
+    clip: rect(100px, 100px, 200px, 0px);
+    width: 200px;
+    transform: scale(3);
+    
+    object-fit: cover;
+}
+
+.tile.yellow {
+    background-image: url("https://static.tildacdn.com/tild3133-3964-4336-a534-613166343538/planet-png-hd-terran.png");
+  
+    clip: rect(100px,200px, 200px, 100px);
+    width: 200px;
+    transform: scale(2);
+    object-fit: cover;
+
+}
+
+.green{
+  
+}
+.blue{
+   
+}
+
+.yellow{
+   
+}
+.orange{
+   }
+    </style>
+
+
+</head>
+<body>
+
+  <!-- <div class="box1" >
+    <div class="one">1</div>
+    <div class="two">2</div>
+  </div>
+ <div class="box2">
+    <div class="four">4</div>
+    <div class="three">3</div>
+   
+ </div> -->
+
+
+
+ <div class="quarter-tile">
+    <div class="tile green"> <img src="https://static.wixstatic.com/media/32069a_8725456eb15a4a3a86514c2b3a591bf6~mv2.gif" alt=""> 1</div>
+    <div class="tile blue"> <img src="https://thumbs.gfycat.com/WeakValuableHogget-size_restricted.gif" alt=""> </div>
+    <div class="tile yellow"><img src="https://bestanimations.com/uploads/gifs/767219404mercury-planet-animation-5.gif" alt=""></div>
+    <div class="tile orange"><img src="https://userscontent2.emaze.com/images/bfd16b5c-1c32-4b06-a154-f839f7057667/83f7e61064b72f544dd75bfdd7388cf0.gif" alt=""></div>
+</div>
+
+
+    
+</body>
+</html>
